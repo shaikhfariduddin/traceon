@@ -1,0 +1,1060 @@
+{
+ "model_version": "tile-resnet18-20261015",
+ "threshold": 1.7652841806411743,
+ "band": 0.1,
+ "files": [
+  {
+   "path": "tile\\test\\crack\\000.png",
+   "defect_type": "crack",
+   "label": 1,
+   "score": 3.0005922317504883,
+   "blur": 546.0772959404821,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\crack\\001.png",
+   "defect_type": "crack",
+   "label": 1,
+   "score": 2.971151351928711,
+   "blur": 611.2457172700321,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\crack\\002.png",
+   "defect_type": "crack",
+   "label": 1,
+   "score": 3.241811990737915,
+   "blur": 562.545758050038,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\crack\\003.png",
+   "defect_type": "crack",
+   "label": 1,
+   "score": 3.0930135250091553,
+   "blur": 458.1669717720132,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\crack\\004.png",
+   "defect_type": "crack",
+   "label": 1,
+   "score": 2.8390161991119385,
+   "blur": 466.7495659450755,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\crack\\005.png",
+   "defect_type": "crack",
+   "label": 1,
+   "score": 2.5845940113067627,
+   "blur": 428.64556352589835,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\crack\\006.png",
+   "defect_type": "crack",
+   "label": 1,
+   "score": 3.3251001834869385,
+   "blur": 513.6279982764954,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\crack\\007.png",
+   "defect_type": "crack",
+   "label": 1,
+   "score": 3.0524823665618896,
+   "blur": 526.7644334125933,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\crack\\008.png",
+   "defect_type": "crack",
+   "label": 1,
+   "score": 2.882432222366333,
+   "blur": 556.4151936316458,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\crack\\009.png",
+   "defect_type": "crack",
+   "label": 1,
+   "score": 2.9279568195343018,
+   "blur": 629.8464894811632,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\crack\\010.png",
+   "defect_type": "crack",
+   "label": 1,
+   "score": 3.7985448837280273,
+   "blur": 587.1170330054483,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\crack\\011.png",
+   "defect_type": "crack",
+   "label": 1,
+   "score": 2.5504345893859863,
+   "blur": 522.2309337353887,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\crack\\012.png",
+   "defect_type": "crack",
+   "label": 1,
+   "score": 3.0038182735443115,
+   "blur": 503.07937667837643,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\crack\\013.png",
+   "defect_type": "crack",
+   "label": 1,
+   "score": 2.7533233165740967,
+   "blur": 495.36326720137015,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\crack\\014.png",
+   "defect_type": "crack",
+   "label": 1,
+   "score": 2.9867162704467773,
+   "blur": 461.7253171601947,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\crack\\015.png",
+   "defect_type": "crack",
+   "label": 1,
+   "score": 2.103853940963745,
+   "blur": 438.15498505310364,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\crack\\016.png",
+   "defect_type": "crack",
+   "label": 1,
+   "score": 2.8978095054626465,
+   "blur": 561.3038509264832,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\glue_strip\\000.png",
+   "defect_type": "glue_strip",
+   "label": 1,
+   "score": 2.785594940185547,
+   "blur": 428.2882213944491,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\glue_strip\\001.png",
+   "defect_type": "glue_strip",
+   "label": 1,
+   "score": 2.710771083831787,
+   "blur": 470.1521749548551,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\glue_strip\\002.png",
+   "defect_type": "glue_strip",
+   "label": 1,
+   "score": 1.9822063446044922,
+   "blur": 360.02318626948,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\glue_strip\\003.png",
+   "defect_type": "glue_strip",
+   "label": 1,
+   "score": 2.155919075012207,
+   "blur": 388.49824929220813,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\glue_strip\\004.png",
+   "defect_type": "glue_strip",
+   "label": 1,
+   "score": 3.0940775871276855,
+   "blur": 380.9604147976664,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\glue_strip\\005.png",
+   "defect_type": "glue_strip",
+   "label": 1,
+   "score": 2.2631185054779053,
+   "blur": 389.21829870694893,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\glue_strip\\006.png",
+   "defect_type": "glue_strip",
+   "label": 1,
+   "score": 2.248991012573242,
+   "blur": 429.7716758001562,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\glue_strip\\007.png",
+   "defect_type": "glue_strip",
+   "label": 1,
+   "score": 2.1632144451141357,
+   "blur": 378.1432333416778,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\glue_strip\\008.png",
+   "defect_type": "glue_strip",
+   "label": 1,
+   "score": 2.7086422443389893,
+   "blur": 423.4056654301308,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\glue_strip\\009.png",
+   "defect_type": "glue_strip",
+   "label": 1,
+   "score": 2.8786001205444336,
+   "blur": 387.0031830590352,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\glue_strip\\010.png",
+   "defect_type": "glue_strip",
+   "label": 1,
+   "score": 2.2271735668182373,
+   "blur": 361.2446972420527,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\glue_strip\\011.png",
+   "defect_type": "glue_strip",
+   "label": 1,
+   "score": 2.2803053855895996,
+   "blur": 440.7286857621641,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\glue_strip\\012.png",
+   "defect_type": "glue_strip",
+   "label": 1,
+   "score": 2.6468453407287598,
+   "blur": 447.1427602135383,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\glue_strip\\013.png",
+   "defect_type": "glue_strip",
+   "label": 1,
+   "score": 2.480058431625366,
+   "blur": 461.0704249974825,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\glue_strip\\014.png",
+   "defect_type": "glue_strip",
+   "label": 1,
+   "score": 2.2916295528411865,
+   "blur": 448.0945193877259,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\glue_strip\\015.png",
+   "defect_type": "glue_strip",
+   "label": 1,
+   "score": 2.6475446224212646,
+   "blur": 472.1201636563792,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\glue_strip\\016.png",
+   "defect_type": "glue_strip",
+   "label": 1,
+   "score": 2.0615129470825195,
+   "blur": 472.59749742716207,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\glue_strip\\017.png",
+   "defect_type": "glue_strip",
+   "label": 1,
+   "score": 2.8096635341644287,
+   "blur": 390.00187160784145,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\000.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.4039232730865479,
+   "blur": 428.3763802287975,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\001.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.3795465230941772,
+   "blur": 360.0826294676102,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\002.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.5462064743041992,
+   "blur": 411.9115075591736,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\003.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.4289535284042358,
+   "blur": 377.0045714030296,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\004.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.404262900352478,
+   "blur": 396.82059015199934,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\005.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.406442642211914,
+   "blur": 461.1182388288655,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\006.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.5932629108428955,
+   "blur": 390.10716523178354,
+   "label_at_threshold": "good",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\good\\007.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.3995609283447266,
+   "blur": 392.62047052196436,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\008.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.5816774368286133,
+   "blur": 397.40797405543134,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\009.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.4555689096450806,
+   "blur": 385.60115741030194,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\010.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.3680633306503296,
+   "blur": 460.6853138123553,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\011.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.4976592063903809,
+   "blur": 433.363778619987,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\012.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.523940086364746,
+   "blur": 442.3150944583556,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\013.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.429057002067566,
+   "blur": 439.97115902245326,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\014.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.4648196697235107,
+   "blur": 468.8909111381137,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\015.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.4571765661239624,
+   "blur": 322.7094669951321,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\016.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.5245651006698608,
+   "blur": 394.4572449627647,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\017.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.7370129823684692,
+   "blur": 374.0034344624459,
+   "label_at_threshold": "good",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\good\\018.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.5394268035888672,
+   "blur": 427.393184389103,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\019.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.4737101793289185,
+   "blur": 416.0308733622923,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\020.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.5188219547271729,
+   "blur": 358.21407457130744,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\021.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.311126708984375,
+   "blur": 461.4923983644546,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\022.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.501778483390808,
+   "blur": 402.62538893963807,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\023.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.455047369003296,
+   "blur": 461.2563824551358,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\024.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.5311055183410645,
+   "blur": 412.6838058851268,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\025.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.6319782733917236,
+   "blur": 374.1992179996512,
+   "label_at_threshold": "good",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\good\\026.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.511012077331543,
+   "blur": 440.202950462662,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\027.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.4743093252182007,
+   "blur": 503.45511002545504,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\028.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.4771230220794678,
+   "blur": 380.2195012492588,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\029.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.5658308267593384,
+   "blur": 432.87374557909885,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\030.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.4957207441329956,
+   "blur": 428.9076880011051,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\031.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.5599502325057983,
+   "blur": 445.91038569073385,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\good\\032.png",
+   "defect_type": "good",
+   "label": 0,
+   "score": 1.454601526260376,
+   "blur": 451.88659416109203,
+   "label_at_threshold": "good",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\gray_stroke\\000.png",
+   "defect_type": "gray_stroke",
+   "label": 1,
+   "score": 1.7062093019485474,
+   "blur": 445.61595888760786,
+   "label_at_threshold": "good",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\gray_stroke\\001.png",
+   "defect_type": "gray_stroke",
+   "label": 1,
+   "score": 1.8921689987182617,
+   "blur": 434.73946290589737,
+   "label_at_threshold": "defective",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\gray_stroke\\002.png",
+   "defect_type": "gray_stroke",
+   "label": 1,
+   "score": 1.7956887483596802,
+   "blur": 387.44490929062613,
+   "label_at_threshold": "defective",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\gray_stroke\\003.png",
+   "defect_type": "gray_stroke",
+   "label": 1,
+   "score": 1.6845173835754395,
+   "blur": 438.69591698412114,
+   "label_at_threshold": "good",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\gray_stroke\\004.png",
+   "defect_type": "gray_stroke",
+   "label": 1,
+   "score": 1.8197025060653687,
+   "blur": 396.94504980980946,
+   "label_at_threshold": "defective",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\gray_stroke\\005.png",
+   "defect_type": "gray_stroke",
+   "label": 1,
+   "score": 1.7258222103118896,
+   "blur": 437.19049779791544,
+   "label_at_threshold": "good",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\gray_stroke\\006.png",
+   "defect_type": "gray_stroke",
+   "label": 1,
+   "score": 1.9199765920639038,
+   "blur": 480.00717378125813,
+   "label_at_threshold": "defective",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\gray_stroke\\007.png",
+   "defect_type": "gray_stroke",
+   "label": 1,
+   "score": 1.8431872129440308,
+   "blur": 386.8093444934255,
+   "label_at_threshold": "defective",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\gray_stroke\\008.png",
+   "defect_type": "gray_stroke",
+   "label": 1,
+   "score": 2.0083909034729004,
+   "blur": 428.44694012815546,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\gray_stroke\\009.png",
+   "defect_type": "gray_stroke",
+   "label": 1,
+   "score": 1.8324289321899414,
+   "blur": 415.0333457724389,
+   "label_at_threshold": "defective",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\gray_stroke\\010.png",
+   "defect_type": "gray_stroke",
+   "label": 1,
+   "score": 1.6760015487670898,
+   "blur": 379.01031896232683,
+   "label_at_threshold": "good",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\gray_stroke\\011.png",
+   "defect_type": "gray_stroke",
+   "label": 1,
+   "score": 2.096097230911255,
+   "blur": 397.8282036463322,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\gray_stroke\\012.png",
+   "defect_type": "gray_stroke",
+   "label": 1,
+   "score": 1.6940052509307861,
+   "blur": 368.5936781307269,
+   "label_at_threshold": "good",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\gray_stroke\\013.png",
+   "defect_type": "gray_stroke",
+   "label": 1,
+   "score": 2.060070514678955,
+   "blur": 395.8509017642996,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\gray_stroke\\014.png",
+   "defect_type": "gray_stroke",
+   "label": 1,
+   "score": 1.773535966873169,
+   "blur": 397.0639908252041,
+   "label_at_threshold": "defective",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\gray_stroke\\015.png",
+   "defect_type": "gray_stroke",
+   "label": 1,
+   "score": 1.8385251760482788,
+   "blur": 452.2657667054825,
+   "label_at_threshold": "defective",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\oil\\000.png",
+   "defect_type": "oil",
+   "label": 1,
+   "score": 2.2127392292022705,
+   "blur": 410.084243077873,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\oil\\001.png",
+   "defect_type": "oil",
+   "label": 1,
+   "score": 2.301440954208374,
+   "blur": 448.73667496479385,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\oil\\002.png",
+   "defect_type": "oil",
+   "label": 1,
+   "score": 2.1186347007751465,
+   "blur": 450.55344224902746,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\oil\\003.png",
+   "defect_type": "oil",
+   "label": 1,
+   "score": 2.2837953567504883,
+   "blur": 410.7503914781297,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\oil\\004.png",
+   "defect_type": "oil",
+   "label": 1,
+   "score": 2.038562059402466,
+   "blur": 407.97069950501117,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\oil\\005.png",
+   "defect_type": "oil",
+   "label": 1,
+   "score": 2.2537758350372314,
+   "blur": 404.9863570397363,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\oil\\006.png",
+   "defect_type": "oil",
+   "label": 1,
+   "score": 2.1676528453826904,
+   "blur": 407.4065233374825,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\oil\\007.png",
+   "defect_type": "oil",
+   "label": 1,
+   "score": 2.1924939155578613,
+   "blur": 427.21286148149983,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\oil\\008.png",
+   "defect_type": "oil",
+   "label": 1,
+   "score": 2.2420995235443115,
+   "blur": 426.5710785185366,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\oil\\009.png",
+   "defect_type": "oil",
+   "label": 1,
+   "score": 2.21968936920166,
+   "blur": 414.63020791960116,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\oil\\010.png",
+   "defect_type": "oil",
+   "label": 1,
+   "score": 2.3559465408325195,
+   "blur": 406.7620734792976,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\oil\\011.png",
+   "defect_type": "oil",
+   "label": 1,
+   "score": 2.379847288131714,
+   "blur": 401.58551112220493,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\oil\\012.png",
+   "defect_type": "oil",
+   "label": 1,
+   "score": 2.371232509613037,
+   "blur": 463.29249291430716,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\oil\\013.png",
+   "defect_type": "oil",
+   "label": 1,
+   "score": 2.2806553840637207,
+   "blur": 426.1826187599613,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\oil\\014.png",
+   "defect_type": "oil",
+   "label": 1,
+   "score": 2.035367965698242,
+   "blur": 379.17304147998,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\oil\\015.png",
+   "defect_type": "oil",
+   "label": 1,
+   "score": 2.1680197715759277,
+   "blur": 244.29895828677672,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\oil\\016.png",
+   "defect_type": "oil",
+   "label": 1,
+   "score": 2.0358524322509766,
+   "blur": 405.4649669726908,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\oil\\017.png",
+   "defect_type": "oil",
+   "label": 1,
+   "score": 2.0249228477478027,
+   "blur": 392.36225670198405,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\rough\\000.png",
+   "defect_type": "rough",
+   "label": 1,
+   "score": 1.737256646156311,
+   "blur": 469.3000473330911,
+   "label_at_threshold": "good",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\rough\\001.png",
+   "defect_type": "rough",
+   "label": 1,
+   "score": 1.8996753692626953,
+   "blur": 583.058347055283,
+   "label_at_threshold": "defective",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\rough\\002.png",
+   "defect_type": "rough",
+   "label": 1,
+   "score": 1.834826111793518,
+   "blur": 543.5420137340058,
+   "label_at_threshold": "defective",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\rough\\003.png",
+   "defect_type": "rough",
+   "label": 1,
+   "score": 1.6916735172271729,
+   "blur": 590.6015696348228,
+   "label_at_threshold": "good",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\rough\\004.png",
+   "defect_type": "rough",
+   "label": 1,
+   "score": 1.7548983097076416,
+   "blur": 1267.1747113471674,
+   "label_at_threshold": "good",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\rough\\005.png",
+   "defect_type": "rough",
+   "label": 1,
+   "score": 1.7794839143753052,
+   "blur": 650.1478912732532,
+   "label_at_threshold": "defective",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\rough\\006.png",
+   "defect_type": "rough",
+   "label": 1,
+   "score": 1.8437060117721558,
+   "blur": 561.7378580393283,
+   "label_at_threshold": "defective",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\rough\\007.png",
+   "defect_type": "rough",
+   "label": 1,
+   "score": 1.85853111743927,
+   "blur": 643.3851180860958,
+   "label_at_threshold": "defective",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\rough\\008.png",
+   "defect_type": "rough",
+   "label": 1,
+   "score": 1.912440538406372,
+   "blur": 772.586783584752,
+   "label_at_threshold": "defective",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\rough\\009.png",
+   "defect_type": "rough",
+   "label": 1,
+   "score": 2.1329662799835205,
+   "blur": 962.9109875148263,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\rough\\010.png",
+   "defect_type": "rough",
+   "label": 1,
+   "score": 2.0041728019714355,
+   "blur": 515.4097304898451,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\rough\\011.png",
+   "defect_type": "rough",
+   "label": 1,
+   "score": 2.0066816806793213,
+   "blur": 741.0183976428233,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\rough\\012.png",
+   "defect_type": "rough",
+   "label": 1,
+   "score": 1.8248960971832275,
+   "blur": 596.6233022600974,
+   "label_at_threshold": "defective",
+   "uncertain": true
+  },
+  {
+   "path": "tile\\test\\rough\\013.png",
+   "defect_type": "rough",
+   "label": 1,
+   "score": 2.1875693798065186,
+   "blur": 404.6427495932445,
+   "label_at_threshold": "defective",
+   "uncertain": false
+  },
+  {
+   "path": "tile\\test\\rough\\014.png",
+   "defect_type": "rough",
+   "label": 1,
+   "score": 1.7735278606414795,
+   "blur": 662.5412842984529,
+   "label_at_threshold": "defective",
+   "uncertain": true
+  }
+ ]
+}
