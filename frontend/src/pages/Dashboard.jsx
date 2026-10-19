@@ -36,9 +36,21 @@ export default function Dashboard() {
   const d = dash.data
 
   return (
-    <>
-      <h1>Dashboard</h1>
-      <p className="sub">What needs attention, which defects are confirmed by people, which actions are open and whether issues come back. AI flags are never counted as defects.</p>
+     <div className="dashboard-page">
+     <div className="dashboard-heading">
+  <div>
+    <span className="eyebrow">TRACEON / QUALITY CONTROL</span>
+    <h1>Quality Overview</h1>
+    <p className="sub">
+      Monitor inspections, review decisions and corrective actions
+      across your product batches.
+    </p>
+  </div>
+  <div className="dashboard-status">
+    <span className="status-dot"></span>
+    Quality dashboard
+  </div>
+</div>
 
       <form className="card row" onSubmit={search}>
         <input style={{ flex: 1, minWidth: 220 }} placeholder="Search batches, products, inspections, defects..." value={q} onChange={(e) => setQ(e.target.value)} aria-label="Search" />
@@ -98,6 +110,6 @@ export default function Dashboard() {
                 {d.recent_activity.map((a) => (<tr key={a.id}><td>{fmtTime(a.at)}</td><td>{a.actor_name || 'system'}</td><td>{pretty(a.entity)} #{a.entity_id} {pretty(a.action)}</td><td>{a.reason || ''}</td></tr>))}</tbody></table>)}
           </section>
         </>)}
-    </>
+    </div>
   )
 }

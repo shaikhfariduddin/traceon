@@ -17,7 +17,7 @@ export default function Assistant() {
   const open = (c) => ({ defect: () => go('defects', { defect_id: c.id }), image: () => go('review', { image_id: c.id }), batch: () => go('catalog', { batch_id: c.id }), inspection: () => go('inspect', { inspection_id: c.id }) }[c.type]?.())
 
   return (
-    <>
+    <div className="assistant-page">
       <h1>Assistant</h1>
       <p className="sub">Answers come only from stored records you are allowed to see, with citations you can open. It explains and summarises; it cannot release batches, close defects or change anything.</p>
       <form className="card" onSubmit={(e) => { e.preventDefault(); q.trim() && ask(q) }}>
@@ -39,6 +39,6 @@ export default function Assistant() {
           {res.citations.length > 0 && <div style={{ marginTop: 12 }}><strong>Sources</strong><br />{res.citations.map((c) => <button key={c.ref} className="chip" onClick={() => open(c)}>{c.ref}</button>)}</div>}
           <small style={{ marginTop: 10 }}>The assistant has no ability to change records. Check each cited record before acting.</small>
         </section>)}
-    </>
+    </div>
   )
 }

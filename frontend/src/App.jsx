@@ -17,29 +17,128 @@ const PAGES = [
   ['assistant', 'Assistant', Assistant, ['inspector', 'manager', 'supervisor']],
 ]
 
+
 function Login({ onDone }) {
   const [f, setF] = useState({ username: '', password: '' })
   const [err, setErr] = useState(null)
   const [busy, setBusy] = useState(false)
+
   const submit = async (e) => {
-    e.preventDefault(); setBusy(true); setErr(null)
-    try { const r = await api.post('/auth/login', f); session.token = r.token; onDone(r.user) }
-    catch (x) { setErr(x) } finally { setBusy(false) }
+    e.preventDefault()
+    setBusy(true)
+    setErr(null)
+    try {
+      const r = await api.post('/auth/login', f)
+      session.token = r.token
+      onDone(r.user)
+    } catch (x) {
+      setErr(x)
+    } finally {
+      setBusy(false)
+    }
   }
+
   return (
-    <form className="login card" onSubmit={submit}>
-      <div className="brand" style={{ color: 'var(--ink)' }}><span className="logo"><i /><i /><i /><i /></span>Traceon</div>
-      <p className="sub">Tile inspection &amp; defect tracking. AI suggests; people decide.</p>
-      <div className="grid">
-        <Field label="Username"><input value={f.username} onChange={(e) => setF({ ...f, username: e.target.value })} autoFocus /></Field>
-        <Field label="Password"><input type="password" value={f.password} onChange={(e) => setF({ ...f, password: e.target.value })} /></Field>
-        <ErrorNote error={err} />
-        <button className="btn" disabled={busy || !f.username || !f.password}>{busy ? 'Signing in...' : 'Sign in'}</button>
-        <small>Demo accounts: manager, inspector, inspector2, supervisor, supervisor2 (password demo1234)</small>
-      </div>
-    </form>
+    <div className="login-page">
+      <section className="login-visual">
+        <div className="visual-top">
+          <span className="logo"><i /><i /><i /><i /></span>
+          <span>TRACEON</span>
+          <span className="visual-tag">QUALITY INTELLIGENCE</span>
+        </div>
+
+        <div className="visual-content">
+          <span className="eyebrow">SMARTER INSPECTION. BETTER TILES.</span>
+          <h1>Every tile tells a story.<br />
+            <span>We help you spot it.</span>
+          </h1>
+          <p>
+            AI-powered quality inspection that helps your team
+            detect defects, review results and take action with confidence.
+          </p>
+
+          <div className="tile-scene">
+            <div className="tile-grid">
+              <div className="tile tile-one"><span /></div>
+              <div className="tile tile-two"><span /></div>
+              <div className="tile tile-three"><span /></div>
+              <div className="tile tile-four"><span /></div>
+            </div>
+            <div className="scan-label">
+              <span className="scan-dot" />
+              AI VISION SYSTEM
+              <span className="scan-line" />
+              TILE ANALYSIS
+            </div>
+            <div className="scan-corner corner-tl" />
+            <div className="scan-corner corner-br" />
+          </div>
+        </div>
+
+        <div className="visual-footer">
+          <span>PRECISION IN EVERY PIXEL</span>
+          <span>AI ASSISTS. PEOPLE DECIDE.</span>
+        </div>
+      </section>
+
+      <section className="login-side">
+        <form className="login-form" onSubmit={submit}>
+          <div className="mobile-brand">
+            <span className="logo"><i /><i /><i /><i /></span>
+            <span>Traceon</span>
+          </div>
+
+          <div className="form-heading">
+            <span className="eyebrow">WELCOME BACK</span>
+            <h2>Good to see you.</h2>
+            <p>Sign in to continue to your quality workspace.</p>
+          </div>
+
+          <div className="grid">
+            <Field label="Username">
+              <input
+                value={f.username}
+                onChange={(e) => setF({ ...f, username: e.target.value })}
+                placeholder="Enter your username"
+                autoComplete="username"
+                autoFocus
+              />
+            </Field>
+
+            <Field label="Password">
+              <input
+                type="password"
+                value={f.password}
+                onChange={(e) => setF({ ...f, password: e.target.value })}
+                placeholder="Enter your password"
+                autoComplete="current-password"
+              />
+            </Field>
+
+            <ErrorNote error={err} />
+
+            <button className="btn login-submit" disabled={busy || !f.username || !f.password}>
+              {busy ? 'Signing in...' : 'Sign in to Traceon'}
+              {!busy && <span aria-hidden="true"> ↗</span>}
+            </button>
+          </div>
+
+          <div className="login-divider"><span>DEMO ACCESS</span></div>
+          <div className="demo-info">
+            <span className="demo-icon">✦</span>
+            <p>
+              Try <strong>manager</strong> or <strong>inspector</strong>
+              <br />Password: <strong>demo1234</strong>
+            </p>
+          </div>
+
+          <p className="login-legal">AI-powered inspection · Human-verified decisions</p>
+        </form>
+      </section>
+    </div>
   )
 }
+
 
 export default function App() {
   const [user, setUser] = useState(null)

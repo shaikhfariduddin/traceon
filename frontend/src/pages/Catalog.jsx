@@ -77,7 +77,7 @@ export default function Catalog() {
   const batches = useAsync(() => api.get('/batches', { product_id: productId, include_archived: showArchived }), [productId, showArchived])
   const canBatch = user.role === 'manager' || user.role === 'inspector'
   return (
-    <>
+    <div className="catalog-page">
       <h1>Products &amp; batches</h1>
       <p className="sub">One product family, many batches. Archiving a product never removes its history.</p>
       <div className="split">
@@ -107,6 +107,6 @@ export default function Catalog() {
           {selected && canBatch && <button className="btn ghost" onClick={() => go('inspect', { batch_id: selected, new: true })}>Start an inspection for this batch</button>}
         </div>
       </div>
-    </>
+    </div>
   )
 }

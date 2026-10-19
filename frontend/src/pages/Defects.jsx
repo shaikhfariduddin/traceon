@@ -78,7 +78,7 @@ export default function Defects() {
   const [err, setErr] = useState(null)
   const reloadAll = () => { defects.reload(); actions.reload() }
   return (
-    <>
+      <div className="defects-page">
       <h1>Defects &amp; actions</h1>
       <p className="sub">Human-confirmed defects, the work assigned to fix them, and the reinspection evidence. Closing or reopening never deletes earlier findings.</p>
       <div className="row" style={{ marginBottom: 12 }}>
@@ -106,6 +106,6 @@ export default function Defects() {
         </section>
         {selected ? <Detail key={selected} id={selected} onChange={reloadAll} /> : <Empty title="Select a defect or action" />}
       </div>
-    </>
+    </div>
   )
 }

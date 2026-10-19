@@ -105,7 +105,7 @@ export default function Inspect() {
   }
   const canCreate = user.role !== 'supervisor' || follow
   return (
-    <>
+    <div className="inspect-page">
       <h1>Inspections</h1>
       <p className="sub">Create an inspection for a batch, upload evidence, then submit it so reviewers can decide. Uploads are kept even if AI processing fails.</p>
       {canCreate && (
@@ -132,6 +132,6 @@ export default function Inspect() {
         </section>
         {selected ? <Detail key={selected} id={selected} onChange={(gone) => { list.reload(); if (gone === true) setSelected(null) }} /> : <Empty title="Select or create an inspection" />}
       </div>
-    </>
+    </div>
   )
 }

@@ -84,7 +84,7 @@ export default function Review() {
   const [selected, setSelected] = useState(params.image_id || null)
   const q = useAsync(() => api.get('/reviews/queue', f), [JSON.stringify(f)])
   return (
-    <>
+    <div className="review-page">
       <h1>Review queue</h1>
       <p className="sub">Ordered by review priority: failed or low-quality results and scores close to the AI threshold come first, because that is where a human check matters most.</p>
       <div className="split">
@@ -100,6 +100,6 @@ export default function Review() {
         </section>
         {selected ? <Detail key={selected} id={selected} onChange={q.reload} /> : <Empty title="Select an image to review" />}
       </div>
-    </>
+    </div>
   )
 }
