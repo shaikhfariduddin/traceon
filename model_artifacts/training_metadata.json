@@ -1,0 +1,119 @@
+﻿{
+  "model_name": "TileDefectClassifier",
+  "version": "v1.0.0",
+  "architecture": "TileDefectClassifier_ResNetLite",
+  "num_classes": 6,
+  "classes": [
+    "good",
+    "crack",
+    "glue_strip",
+    "gray_stroke",
+    "oil",
+    "rough"
+  ],
+  "class_to_idx": {
+    "good": 0,
+    "crack": 1,
+    "glue_strip": 2,
+    "gray_stroke": 3,
+    "oil": 4,
+    "rough": 5
+  },
+  "input_resolution": [
+    224,
+    224
+  ],
+  "epochs": 12,
+  "batch_size": 16,
+  "learning_rate": 0.001,
+  "optimizer": "AdamW",
+  "training_time_seconds": 313.35,
+  "best_val_accuracy": 0.7592592592592593,
+  "best_val_loss": 0.9679279062483046,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.8675,
+      "train_acc": 0.2543,
+      "val_loss": 2.7211,
+      "val_acc": 0.0556
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.3296,
+      "train_acc": 0.3664,
+      "val_loss": 3.0604,
+      "val_acc": 0.0556
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.2193,
+      "train_acc": 0.4009,
+      "val_loss": 2.4574,
+      "val_acc": 0.0556
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.2743,
+      "train_acc": 0.5302,
+      "val_loss": 10.6995,
+      "val_acc": 0.0556
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.034,
+      "train_acc": 0.4569,
+      "val_loss": 3.6462,
+      "val_acc": 0.1111
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.0597,
+      "train_acc": 0.4483,
+      "val_loss": 1.5118,
+      "val_acc": 0.3148
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.8358,
+      "train_acc": 0.5345,
+      "val_loss": 1.5517,
+      "val_acc": 0.2593
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.7832,
+      "train_acc": 0.5905,
+      "val_loss": 1.1264,
+      "val_acc": 0.5556
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.698,
+      "train_acc": 0.6293,
+      "val_loss": 1.0633,
+      "val_acc": 0.6667
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.5928,
+      "train_acc": 0.7371,
+      "val_loss": 0.9679,
+      "val_acc": 0.7593
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.4714,
+      "train_acc": 0.7543,
+      "val_loss": 0.9613,
+      "val_acc": 0.7222
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.4813,
+      "train_acc": 0.7888,
+      "val_loss": 0.9622,
+      "val_acc": 0.7222
+    }
+  ]
+}

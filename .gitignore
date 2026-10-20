@@ -1,0 +1,36 @@
+﻿
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+
+# Python environments and caches
+**/__pycache__/
+**/.pytest_cache/
+**/.venv/
+venv/
+*.pyc
+
+# Uploaded files and local datasets
+uploads/
+dataset/
+tile.tar
+*.tar
+*.tar.gz
+
+# Trained model weights
+model_artifacts/*.pt
+model_artifacts/*.pth
+model_artifacts/*.onnx
+
+# Editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db
