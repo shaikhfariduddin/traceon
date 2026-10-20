@@ -25,9 +25,9 @@ A Buildathon 2.0 project bringing tile inspection evidence, AI-assisted defect s
 | **GenAI** | Grounded Quality Intelligence with optional Gemini API integration |
 | **Event** | Buildathon 2.0 |
 
-**Team Name:** `[Add Team Name]`  
-**Team Members:** `[Add Team Members]`  
-**Institution:** `[Add Institution Name]`
+**Team Name:** `Team Rocket`  
+**Team Members:** `Farid Shaikh, Piyush Shah, Sharvari Pujari, Shraddha Wannare`  
+**Institution:** `Walchand Institute of Technology, Solapur`
 
 ---
 
