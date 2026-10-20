@@ -1,132 +1,102 @@
-﻿# Tile Quality Inspection & Defect Tracking System
+﻿<div align="center">
 
-Buildathon 2.0 web application for **tile manufacturing / installation quality inspection**. It replaces disconnected photographs, spreadsheets, and repair notes with one traceable workflow:
+# Traceon
+### Tile Quality Inspection & Defect Tracking System
 
-**Register Product & Batch â†’ Upload Images & Notes â†’ AI Suggestion â†’ Human Review â†’ Corrective Action â†’ Reinspection â†’ Dashboard & Cited Report**
+**From isolated defect images to traceable quality decisions.**
 
-## Main features
+A Buildathon 2.0 project bringing tile inspection evidence, AI-assisted defect suggestions, human review, corrective actions, and reinspection into one traceable workflow.
 
-- Role-based JWT auth: Inspector, Supervisor, Manager (backend-enforced)
-- Product and batch registration, archive, hold/release decisions
-- Multi-image inspection upload with OpenCV quality checks
-- PyTorch tile classifier (`good` plus dataset defect classes) stored separately from human review
-- Defect tracking, assigned corrective actions, completion notes, close/reopen
-- Follow-up reinspection that never deletes original evidence
-- Dashboard counts **distinct tiles**, not photographs
-- Evidence-based inspection priority queue (explainable scores)
-- Grounded GenAI Q&A and batch reports with database citations
+</div>
 
-## Technology stack
+---
 
-- Frontend: React, Vite, Tailwind CSS, React Router, Axios
-- Backend: FastAPI, Pydantic, SQLAlchemy 2.x, Alembic, JWT
-- Database: PostgreSQL
-- ML: PyTorch transfer learning, OpenCV, scikit-learn
-- GenAI: permission-aware SQL retrieval; optional OpenAI key, otherwise a deterministic grounded fallback
+## Project at a Glance
 
-## Dataset
+| Item | Details |
+|---|---|
+| **Project Name** | Traceon |
+| **Domain** | Tile Quality Inspection and Defect Tracking |
+| **Primary Users** | Inspectors, Supervisors, Managers |
+| **Frontend** | React, JavaScript, CSS |
+| **Backend** | Python, FastAPI |
+| **Database** | PostgreSQL |
+| **AI/ML** | PyTorch, OpenCV |
+| **GenAI** | Grounded Quality Intelligence with optional Gemini API integration |
+| **Event** | Buildathon 2.0 |
 
-Place (or keep) the MVTec-style tile dataset at:
+**Team Name:** `[Add Team Name]`  
+**Team Members:** `[Add Team Members]`  
+**Institution:** `[Add Institution Name]`
 
-`C:\Users\PIYUSH\Downloads\tile\tile`
+---
 
-Observed structure after inspection: `train/` and `test/` folders with class directories `good`, `crack`, `glue_strip`, `gray_stroke`, `oil`, `rough`. The model **only** predicts those supported labels. Installation issues such as grout spacing or alignment are captured with the **manual checklist**.
+## 1. Problem Context
 
-Do not commit dataset images.
+Tile quality inspection is an important part of maintaining product quality and identifying surface defects. However, inspection photographs, inspection results, defect reports, and corrective-action records can be stored separately across different systems or files.
 
-## Local setup (Windows PowerShell)
+When this information is disconnected, it becomes difficult to understand the complete history of an inspection, determine whether a reported defect was reviewed, track corrective actions, and verify whether an issue was resolved after reinspection.
 
-### 1. PostgreSQL
+This creates several challenges:
 
-Either use an existing local Postgres instance or:
+- **Disconnected inspection evidence:** Images, inspection results, and repair records are difficult to connect.
+- **Slow quality reviews:** Inspectors and supervisors may need to search multiple records before making decisions.
+- **Limited traceability:** It can be difficult to identify who reviewed a defect and what action was taken.
+- **Recurring defects:** Historical records may not be easy to analyze for repeated quality issues.
+- **Manual reporting:** Preparing inspection summaries and quality reports can require repetitive work.
 
-```powershell
-docker compose up -d postgres
-```
+## 2. Problem Statement
 
-Create the database if it does not exist (`tile_quality_db`, user `postgres`, password `admin@123`).
+Develop a centralized, AI-assisted tile quality inspection and defect tracking system that connects inspection images, model predictions, human review decisions, corrective actions, and reinspection records.
 
-### 2. Environment
+The system should improve traceability, support faster evidence-based reviews, help prioritize quality issues, and provide useful summaries of recorded inspection data.
 
-Copy `.env.example` values into `backend/.env` if needed. Default demo database settings:
+The solution must maintain a clear distinction between AI-generated suggestions and decisions confirmed by authorized users.
 
-```
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=tile_quality_db
-DB_USER=postgres
-DB_PASSWORD=admin@123
-```
+## 3. Proposed Solution
 
-Leave `OPENAI_API_KEY` empty unless you have a key. The RAG engine still answers from PostgreSQL records.
+**Traceon** is a full-stack web application designed to manage the tile quality inspection lifecycle in one place.
 
-### 3. Backend
+It combines image-based defect classification, image-quality checks, structured inspection records, human review, corrective-action tracking, reinspection, and grounded quality intelligence.
 
-```powershell
-cd "C:\Users\PIYUSH\Desktop\Defect Tracking\backend"
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python -m alembic upgrade head
-python -m app.db.init_db
-python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
-```
+Instead of treating each inspection image as an isolated file, Traceon connects the image to its inspection, product, batch, review outcome, and subsequent actions.
 
-API docs: http://127.0.0.1:8000/api/docs
-Health: http://127.0.0.1:8000/api/health
+### Our approach
 
-### 4. Frontend
+- Centralize products, batches, inspections, images, and defect records.
+- Use computer vision and machine learning to assist with image inspection.
+- Allow authorized users to review AI suggestions before confirming outcomes.
+- Track corrective actions and follow-up inspections.
+- Prioritize cases using explainable rules.
+- Generate summaries from available inspection records with supporting references where implemented.
 
-```powershell
-cd "C:\Users\PIYUSH\Desktop\Defect Tracking\frontend"
-npm install
-npm run dev
-```
+> **Important:** Traceon is a decision-support system. An ML prediction is a suggestion, not a confirmed defect or proof that an entire tile installation or batch is defect-free.
 
-Open http://127.0.0.1:5173
+## 4. End-to-End Workflow
 
-### 5. Train / evaluate the model (optional if artifacts exist)
+```mermaid
+flowchart TD
+    A["Register Product and Batch"] --> B["Create Inspection"]
+    B --> C["Upload Tile Images and Notes"]
+    C --> D["Image Quality Checks"]
+    D --> E["ML Defect Classification"]
+    E --> F["Human Review"]
 
-```powershell
-cd "C:\Users\PIYUSH\Desktop\Defect Tracking\backend"
-python -m app.ml.dataset_manifest
-python -m app.ml.train
-python -m app.ml.evaluate
-```
+    F --> G{"Review Outcome"}
 
-Artifacts are written to `model_artifacts/`. Evaluation evidence is in `docs/ml-evaluation.md`.
+    G -->|Defect Confirmed| H["Create or Update Defect"]
+    G -->|More Evidence Needed| I["Request Follow-up"]
+    G -->|No Defect Identified| J["Record Review Decision"]
 
-## Demo accounts
+    H --> K["Assign Corrective Action"]
+    K --> L["Record Completion Evidence"]
+    L --> M["Reinspection"]
+    I --> M
 
-| Role | Username | Password |
-| --- | --- | --- |
-| Inspector | inspector | inspector123 |
-| Supervisor | supervisor | supervisor123 |
-| Manager | manager | manager123 |
+    M --> N{"Resolved?"}
+    N -->|Yes| O["Close with Traceable Evidence"]
+    N -->|No| H
 
-Use the login screen one-click buttons, or the navbar role switcher during judging.
-
-## Tests
-
-```powershell
-cd "C:\Users\PIYUSH\Desktop\Defect Tracking"
-python -m pytest backend/tests/test_all.py -v
-cd frontend
-npm run build
-```
-
-## Known limitations
-
-- Priority-queue usability study vs FIFO is implemented as a **backend simulation**; live shop-floor time-to-detect experiments are labelled unevaluated unless `status` is `evaluated`.
-- GenAI does not invent records. Without an LLM API key it uses a deterministic grounded composer, not fabricated chat.
-- Image-level classification is **not** proof that a room, floor, or entire batch is defect-free.
-- Small / imbalanced tile dataset: do not over-generalise reported metrics.
-
-## Documentation
-
-- `docs/architecture.md`
-- `docs/database-schema.md`
-- `docs/api-documentation.md`
-- `docs/ml-evaluation.md`
-- `docs/genai-evaluation.md`
-- `docs/presentation-slides.md`
+    J --> P["Dashboard and Reports"]
+    O --> P
+    P --> Q["Grounded Quality Intelligence"]
