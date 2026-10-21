@@ -1,21 +1,31 @@
-﻿# GenAI evaluation
+﻿# GenAI Evaluation — Traceon
 
-## Provider
+## 1. Provider and Retrieval
 
-Server-side retrieval in `backend/app/genai/rag_engine.py`.
+Traceon uses a server-side Retrieval-Augmented Generation (RAG) workflow to provide evidence-based quality insights using the **Google Gemini API**.
 
-- If `OPENAI_API_KEY` is set, the grounded evidence pack is sent to the configured LLM.
-- If the key is missing, answers are composed **only** from authorised SQL results. The UI still shows citations. This is not a mock chatbot.
+- The Gemini API key is configured through a backend environment variable and must never be exposed in the frontend or committed to GitHub.
+- The backend retrieves relevant, authorized quality records from PostgreSQL and prepares an evidence-based context for Gemini.
+- If Gemini is unavailable or not configured, the system should return a clear fallback response based on authorized database records, if supported by the implementation.
+- Responses should include citations or record references that allow users to trace the supporting evidence.
 
-## Safety checks covered by tests
+## 2. Evaluation and Safety Checks
 
-- Batch summary for a real seeded batch (e.g. B-104) returns citations that resolve to records.
-- Unknown batch IDs must not invent coverage.
-- Prompt-injection style questions cannot approve a batch.
-- Completing an action or releasing a batch cannot be done from generated text; those are separate authenticated endpoints.
+GenAI responses should be evaluated against the following cases:
 
-## Mandatory distinctions in answers
+- **Valid batch query:** Summaries use actual batch records and provide verifiable citations.
+- **Unknown batch:** The system does not invent batch details or inspection results.
+- **Prompt injection:** Instructions attempting to bypass permissions or approve a batch are rejected or safely ignored.
+- **Unauthorized data:** Responses do not disclose records the requesting user is not permitted to access.
+- **Quality decisions:** Generated text cannot independently confirm defects, complete corrective actions, or release batches. These operations require separate authenticated application workflows.
 
-- ML suggestion vs human-confirmed result
-- Distinct inspected items vs photograph count
-- Missing evidence â†’ â€œcannot be answered from available recordsâ€
+## 3. Mandatory Response Rules
+
+- **ML prediction vs. human decision:** Clearly distinguish predicted defects from human-confirmed defects.
+- **Item count vs. image count:** Do not treat multiple photographs of one item as multiple inspected items.
+- **Missing evidence:** State that the question cannot be answered from the available records when supporting data is insufficient.
+- **Evidence-based answers:** Do not fabricate batch details, defect counts, review decisions, or corrective-action status.
+
+## 4. Evaluation Objective
+
+The goal is to ensure that Traceon's GenAI component provides useful, traceable quality insights while preserving data privacy, human oversight, and reliable batch decision-making.
