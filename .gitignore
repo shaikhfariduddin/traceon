@@ -1,5 +1,7 @@
 ﻿
+# ==========================================
 # Environment variables and secrets
+# ==========================================
 .env
 .env.*
 !.env.example
@@ -7,30 +9,46 @@ backend/.env
 frontend/.env
 frontend/.env.local
 
+# ==========================================
 # Frontend dependencies and build output
+# ==========================================
 frontend/node_modules/
 frontend/dist/
 
+# ==========================================
 # Python environments and caches
+# ==========================================
 **/__pycache__/
 **/.pytest_cache/
 **/.venv/
 venv/
 *.pyc
 
+# ==========================================
 # Uploaded files and local datasets
+# ==========================================
 uploads/
+backend/uploads/
 dataset/
 tile.tar
 *.tar
 *.tar.gz
 
+# ==========================================
 # Trained model weights
+# ==========================================
+# Keep the production model available to Render.
+# Ignore other model weights by default.
 model_artifacts/*.pt
 model_artifacts/*.pth
 model_artifacts/*.onnx
 
+# Exception: include the model required by the application.
+!model_artifacts/tile_defect_classifier.pt
+
+# ==========================================
 # Editor and operating-system files
+# ==========================================
 .vscode/
 .DS_Store
 Thumbs.db
